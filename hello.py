@@ -1,6 +1,5 @@
-import math
-
 
 if __name__ == '__main__':
-    x = input()
-    print(x)
+    if 3 == 3 and 2 == 2:
+        print("a")
+    print("b")
