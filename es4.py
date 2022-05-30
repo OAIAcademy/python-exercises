@@ -8,10 +8,9 @@ def sum(a, b):
 
 
 def dist(primo_numero, secondo_numero):
-    a = 3
-    if a == 0:
+    if primo_numero == 0:
         return 0
-    return math.sqrt(a ** 2 + b ** 2)
+    return math.sqrt(primo_numero ** 2 + secondo_numero ** 2)
 
 
 z = 0
