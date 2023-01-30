@@ -15,11 +15,19 @@ for i in l1:  # cicle list values
 l2 = [(i * 2) for i in range(0, 10)]  # list can be defined inline
 print(l2)
 
+#           list can be sliced (select sub string) using [start:end:step]
+print(l2[2:4])  # select from 2 to 4
+print(l2[:4])  # select till index 4
+print(l2[2:])  # select from index 2
+print(l2[::2])  # select even index
+print(l2[-1])  # select last (very useful!)
+
 # tuple
 
-t = (2, "a", 3)
-
-a, b = (2, 3)
+t = (2, "a", 3)  # definition
+a, b = (2, 3)  # unpacking
+b, a = a, b  # swap using hidden tuple
+_, c = (1, 2)  # throw away first value
 
 # set
 s = {"a", 2, 3}

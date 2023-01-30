@@ -53,12 +53,14 @@ print("EX 2")
 for i in range(0, 1000):
     if i % 2 != 0:
         print(i)
+
 # 3
 print("EX 3")
 for i in range(1, 11):
     for j in range(1, 11):
         print(f"{i * j} ", end='')
     print("\n")
+
 # 4
 print("EX 4")
 print("Number:")
@@ -72,6 +74,7 @@ if flag_primo and x >= 2:
     print(f"{x} is prime")
 else:
     print(f"{x} is not prime")
+
 # 5
 print("EX 5")
 for x in range(2, 1000):

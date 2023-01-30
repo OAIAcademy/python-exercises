@@ -42,8 +42,7 @@ to_float = float(172.3)
 
 #   Null
 a = None
-a is None == True
-a is None == True
+print(a is None)
 
 # reading input from user
 input_string = input()
