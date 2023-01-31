@@ -1,39 +1,10 @@
 # 1 - Create a class rapresenting a point in 2d space implementing:
 #               .__eq__
 #               distance(self,p:point)-> float that return the distance
+#               accessor for attributes
 # 2 - Using the point class create a class that represent a broken line, implementing __eq__ and a .length()->float
 # 3 - Using the broken line class as base, create a class representing a closed broken line
 # 4 - Using the closed broken line as base create a Square class, implementing the __area__ method
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 # SOLUTIONS
@@ -51,6 +22,18 @@ class Point:
     def distance(self, p) -> float:
         assert (isinstance(p, Point))
         return math.sqrt((self.x - p.x) ** 2 + (self.y - p.y) ** 2)
+
+    def get_x(self) -> float:
+        return self.x
+
+    def get_y(self) -> float:
+        return self.y
+
+    def set_x(self, value: float):
+        self.x = value
+
+    def set_y(self, value: float):
+        self.y = value
 
     def __eq__(self, o: object) -> bool:
         return isinstance(o, Point) and self.x == o.x and self.y == o.y

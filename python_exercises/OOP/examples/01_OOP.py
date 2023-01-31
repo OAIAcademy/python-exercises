@@ -47,6 +47,19 @@ class Rectangle(Polygon):  # class derived from polygon
                and self.side_b_len == o.side_b_len \
                and self.side_a_len == o.side_a_len
 
+    # accessor are method use to hide the implementation of attribute
+    def get_side_a_len(self) -> float:
+        return self.side_a_len
+
+    def get_side_b_len(self) -> float:
+        return self.side_a_len
+
+    def set_side_a_len(self, value: float):
+        self.side_a_len = value
+
+    def set_side_b_len(self, value: float):
+        self.side_a_len = value
+
 
 class Square(Rectangle):
     def __init__(self, side_len: float) -> None:
