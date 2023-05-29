@@ -1,4 +1,4 @@
-# 1 - compute and print area of triagle taking as input base and high
+# 1 - compute and print area of triangle taking as input base and high
 # 2 - check and print if 2 integer are divisible
 
 

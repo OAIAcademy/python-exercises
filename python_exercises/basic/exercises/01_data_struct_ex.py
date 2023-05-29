@@ -26,6 +26,7 @@
 
 
 
+
 # SOLUTION
 # 1
 primes = []
@@ -39,7 +40,7 @@ for i in range(2, 1000):
         primes.append(i)
 
 for prime in primes:
-    print(prime)
+    print(primes)
 
 # 2
 ris = {}

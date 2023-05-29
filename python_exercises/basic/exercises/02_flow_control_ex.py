@@ -5,49 +5,14 @@
 # 5 - print prime numbers < 1000
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Solutions
+#Solutions
 # 1
 import math
 
 print("EX 1")
-for i in range(0, 10):
+for i in range(0, 11):
     print(i)
+
 # 2
 print("EX 2")
 for i in range(0, 1000):
@@ -58,10 +23,15 @@ for i in range(0, 1000):
 print("EX 3")
 for i in range(1, 11):
     for j in range(1, 11):
-        print(f"{i * j} ", end='')
-    print("\n")
+        print(f"{i * j}", end='')
+    print("\n", end='')
+
+
+
 
 # 4
+import math
+
 print("EX 4")
 print("Number:")
 x = int(input())
