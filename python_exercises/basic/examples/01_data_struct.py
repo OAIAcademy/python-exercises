@@ -3,11 +3,11 @@
 l = []  # empty declaration
 l1 = [1, 2, 3, "asd", 2.3, [2, 3]]  # declaration and non empty init
 l1.append(2)  # add to the end
-l1.pop(3)  # take out first
+l1.pop(3)  # take out nth
 
 l1[3] = "adbsdfgh"  # change specific value
 
-l1.extend(l1)  # append list to list
+l1.extend([3, 5])  # append list to list
 
 for i in l1:  # cicle list values
     print(i)
@@ -24,6 +24,7 @@ print(l2[-1])  # select last (very useful!)
 
 # tuple
 
+
 t = (2, "a", 3)  # definition
 a, b = (2, 3)  # unpacking
 b, a = a, b  # swap using hidden tuple
@@ -34,6 +35,7 @@ s = {"a", 2, 3}
 s1 = {"a", 1, 3}
 s.add("fsdf")
 s.remove("a")
+s.intersection(s1)
 
 # dict
 d = {"a": 23, "b": {}, 1: []}

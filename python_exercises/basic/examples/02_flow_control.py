@@ -25,7 +25,8 @@ while flag:
 # Cycle - for
 for i in range(0, 10):  # using generator
     print(i)
-for i in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]:  # using list
+
+for i in [0, 1, 2, 3, 4, 6, 7, 8, 9]:  # using list
     print(i)
 # Cycle - nesting
 for i in range(0, 10):
@@ -36,6 +37,7 @@ for i in range(0, 10):
 i = 0
 while True:
     if i == 5:
+        i += i
         continue  # jump to the next cycle
     if i == 10:
         break  # exit from the loop now

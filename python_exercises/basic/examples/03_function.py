@@ -9,7 +9,7 @@ def power(x, y=2):  # definition with default value for arguments
     return x ** y
 
 
-def cumulative_sum(start: float, end: float, gap: float = 1) -> float:  # definition with tipy checks
+def cumulative_sum(start: float, end: float, gap: float = 1) -> float:  # definition with type checks
     if start == end:
         return end
     return start + cumulative_sum(start + gap, end, gap)  # function can call itself
@@ -17,7 +17,7 @@ def cumulative_sum(start: float, end: float, gap: float = 1) -> float:  # defini
 
 print(cumulative_sum(1, 100))
 
-# il nome di una fuzione è un puntatore alla stessa
+# il nome di una funzione è un puntatore alla stessa
 a = sum
 b = power
 print(a(7, 2))
@@ -39,3 +39,15 @@ print(sorted(list, key=k))
 list = ["az", "jjj", "12", "obc", "obd"]
 
 print(sorted(list, key=lambda x: x[::-1]))  # string reversing [start_index:stop_index:step]
+
+
+# generators
+def my_range(low, high, step):
+    i = low
+    while i < high:
+        yield i
+        i += step
+
+
+for j in my_range(0, 5, 2):
+    print(j)
